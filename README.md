@@ -16,7 +16,7 @@ the rename and update the renamed folders.
 
 ### Workflow
 
-![alt tag](https://raw.github.com/BubblesToTheLimit/studip-to-filesystem/blob/master/example.png)
+![alt text](https://github.com/BubblesToTheLimit/studip-to-filesystem/blob/master/example.png)
 
 ### Dependencies
 
