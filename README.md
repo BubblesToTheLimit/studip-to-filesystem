@@ -2,12 +2,12 @@ studip-to-filesystem
 ====================
 
 Thanks alot to the guy who wrote this tool in the first place! (github.com/flammi)
-I have no idea about ruby, so my modifications are currently hard-coded, so I'd appreciate help.
-I just forked and modified it, such that the following features are added:
+I have no idea about ruby, so my modifications are currently hard-coded and I'd appreciate your help.
+I just forked and modified it, such that the following features are now added:
 - being able to download / sign-in to http://e-learning.tu-harburg.de/studip which has different addresses for logging in, also the studip address was hard-coded into the lib-file
 - saving the studip documents under ~/documents
 
-This tool is able to copy all files of your courses in the elearning plattform "StudIp" to a folder on your local hard
+This tool is able to copy all files of your courses in the e-learning platform "StudIp" to a folder on your local hard
 drive. If the initial copy has finished the tool will fetch the new files and download them.
 
 On the initial copy the tool will create a folder for each course and save the files there. If you doesn't like the
