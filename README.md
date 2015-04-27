@@ -14,6 +14,10 @@ On the initial copy the tool will create a folder for each course and save the f
 simplified names, simply rename the folders to something you like more. On the next run of the script it will recognize
 the rename and update the renamed folders.
 
+### Workflow
+
+![alt tag](https://raw.github.com/BubblesToTheLimit/studip-to-filesystem/blob/master/example.png)
+
 ### Dependencies
 
 - Ruby >= 1.9
@@ -21,11 +25,12 @@ the rename and update the renamed folders.
 - Mechanize
 - Highline
 
-### Usage
+### Installation
     $> cd ~/documents
     $> git clone git@github.com:BubblesToTheLimit/studip-to-filesystem.git
     $> apt-get install ruby ruby-highline ruby-mechanize ruby-nokogiri
     $> cd studip-to-filesystem
+    open studio.rb with an editor
     $> vim studip.rb
     now edit the 51th line and change it to your documents-path
     from:
