@@ -1,7 +1,7 @@
 studip-to-filesystem
 ====================
 
-Thanks alot to the guy who wrote this tool in the first place!
+Thanks alot to the guy who wrote this tool in the first place! (github.com/flammi)
 I have no idea about ruby, so my modifications are currently hard-coded, so I'd appreciate help.
 I just forked and modified it, such that the following features are added:
 - being able to download / sign-in to http://e-learning.tu-harburg.de/studip which has different addresses for logging in, also the studip address was hard-coded into the lib-file
