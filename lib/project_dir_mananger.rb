@@ -5,7 +5,7 @@ class ProjectDirManager
 
   def import_dirs(wd)
     Dir.glob("#{wd}/**/.studipdl").each do |file|
-      puts file
+      #puts file
       f = File.new(file, "r")
       cid = f.readline
       course_dir = File.dirname(file)
