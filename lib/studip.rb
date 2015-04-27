@@ -19,7 +19,7 @@ class Course
 
   def files()
     begin
-      filepage = @browser.get "http://elearning.uni-bremen.de/folder.php?cid=#{@cid}&cmd=all"
+      filepage = @browser.get "http://e-learning.tu-harburg.de/studip/folder.php?cid=#{@cid}&cmd=all"
     rescue
       puts "Couldn't get files"
       return
@@ -61,7 +61,7 @@ class Studip
 
   def initialize(url, username, password)
     @fake_browser = Mechanize.new
-    p = @fake_browser.get url
+    p = @fake_browser.get url+"/index.php?again=yes"
     login_form = p.form_with :name => "login"
     login_form.field_with(:name => "loginname").value = username
     login_form.field_with(:name => "password").value = password
@@ -75,7 +75,7 @@ class Studip
   end
 
   def list_courses()
-    veranstaltungen = @fake_browser.get "http://elearning.uni-bremen.de/meine_seminare.php"
+    veranstaltungen = @fake_browser.get "http://e-learning.tu-harburg.de/studip/meine_seminare.php"
     doc = Nokogiri::HTML(veranstaltungen.body)
 
     res = Array.new

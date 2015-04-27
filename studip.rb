@@ -42,12 +42,13 @@ def sync
 
   #Loading dir structure
   pm = ProjectDirManager.new
+  #pm.import_dirs(".")
   pm.import_dirs(".")
 
   studip.list_courses.each do |course|
     puts " * #{course.name}"
 
-    dlDir = pm.dir_for(course.name, course.cid)
+    dlDir = "/home/scat666/documents/"+pm.dir_for(course.name, course.cid)
 
     if course.files != nil
       course.files.each do |file|
