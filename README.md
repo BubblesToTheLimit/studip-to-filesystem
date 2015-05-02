@@ -13,7 +13,7 @@ On the initial copy the tool will create a folder for each course and save the f
 simplified names, simply rename the folders to something you like more. On the next run of the script it will recognize
 the rename and update the renamed folders.
 
-If this tool doesnt work for your studip-platform (this one is optimized for tuhh), change the paths in [lib/studip.rb](lib/studib.rb) accordingly.
+If this tool doesnt work for your studip-platform (this one is optimized for tuhh), change the paths in [lib/studip.rb](lib/studip.rb) accordingly.
 
 ### Workflow
 
