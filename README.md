@@ -30,19 +30,5 @@ the rename and update the renamed folders.
     $> git clone git@github.com:BubblesToTheLimit/studip-to-filesystem.git
     $> apt-get install ruby ruby-highline ruby-mechanize ruby-nokogiri
     $> cd studip-to-filesystem
-    open studio.rb with an editor
-    $> vim studip.rb
-    now edit the 51th line and change it to your documents-path
-    from:
-    dlDir = "/home/scat666/documents/"+pm.dir_for(course.name, course.cid)
-    to:
-    dlDir = "/home/your_username/documents/"+pm.dir_for(course.name, course.cid)
     $> ruby studip.rb init http://e-learning.tu-harburg.de/studip
-    Username:
-    <Enter your Studip username here>
-    Password:
-    <Enter your studip username here>
-    
-    From now on to get the newest uploads, just enter the following line. (idea: cronjob?)
     $> ruby ./studip sync
-    <The data of your courses are copied now to this dir>
