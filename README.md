@@ -2,8 +2,7 @@ studip-to-filesystem
 ====================
 
 Thanks alot to the guy who wrote this tool in the first place! (github.com/flammi)
-I have no idea about ruby, so my modifications are currently hard-coded and I'd appreciate your help.
-I just forked and modified it, such that the following features are now added:
+The following features have been added:
 - being able to download / sign-in to http://e-learning.tu-harburg.de/studip which has different addresses for logging in, also the studip address was hard-coded into the lib-file
 - saving the studip documents under any given path
 
@@ -14,7 +13,7 @@ On the initial copy the tool will create a folder for each course and save the f
 simplified names, simply rename the folders to something you like more. On the next run of the script it will recognize
 the rename and update the renamed folders.
 
-If this tool doesnt work for your studip-platform (this one is optimized for tuhh), change the paths in (lib/studib.rb)[lib/studip.rb] accordingly.
+If this tool doesnt work for your studip-platform (this one is optimized for tuhh), change the paths in [lib/studip.rb](lib/studib.rb) accordingly.
 
 ### Workflow
 
