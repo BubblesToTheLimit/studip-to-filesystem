@@ -3,8 +3,8 @@ studip-to-filesystem
 
 Thanks alot to the guy who wrote this tool in the first place! (github.com/flammi)
 The following features have been added:
-- being able to download / sign-in to http://e-learning.tu-harburg.de/studip which has different addresses for logging in, also the studip address was hard-coded into the lib-file
-- saving the studip documents under any given path
+- download from the TUHH studip
+- save the studip documents under any given path
 
 This tool is able to copy all files of your courses in the e-learning platform "StudIp" to a folder on your local hard
 drive. If the initial copy has finished the tool will fetch the new files and download them.
