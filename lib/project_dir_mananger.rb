@@ -1,10 +1,17 @@
 class ProjectDirManager
+  @@directory
+  def self.directory
+    @@directory
+  end  
   def initialize()
     @project_dirs = Hash.new
   end
 
+  #its called with "."
   def import_dirs(wd)
-    Dir.glob("#{wd}/**/.studipdl").each do |file|
+    @@directory = wd
+    #the .studipdl-files contain one hash each and are simply read into the project_dirs array
+    Dir.glob("#{@@directory}/**/.studipdl").each do |file|
       #puts file
       f = File.new(file, "r")
       cid = f.readline
@@ -27,7 +34,8 @@ class ProjectDirManager
   def dir_for(course_name, cid)
     if not @project_dirs[cid]
       #Create dir
-      newDir = clean_up_course_name(course_name)
+      puts "create new dir here:"+clean_up_course_name(course_name)
+      newDir = @@directory+"/"+clean_up_course_name(course_name)
       if not File.directory? newDir
         Dir::mkdir(newDir)
       end
