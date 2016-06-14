@@ -1,6 +1,8 @@
 studip-to-filesystem
 ====================
 
+Warning: Probably unusable right now since the tuhh studip has been upgraded to newer version which has an entirely different interface. (TODO)
+
 Thanks alot to the guy who wrote this tool in the first place! (github.com/flammi)
 The following features have been added:
 - download from the TUHH studip
